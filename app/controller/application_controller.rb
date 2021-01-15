@@ -5,9 +5,4 @@ class ApplicationController < Sinatra::Base
         erb :index
     end
 
-    post '/notes' do
-        @note = params["note"]
-        erb :notes
-    end
-
 end
